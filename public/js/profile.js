@@ -1,0 +1,118 @@
+export const profile = {
+    name: "Mikael Mendonça",
+    title: "Analista de Qualidade de Software | QA Engineer",
+    location: "São Paulo, SP",
+    summary: "Analista de Qualidade de Software com experiência prática em testes manuais e automação: análise de requisitos, cenários e casos de teste, execução, documentação de defeitos e validação de regras de negócio. Perfil orientado à prevenção de falhas, melhoria contínua e automação de processos de qualidade.",
+    experience: [
+        {
+            role: "QA",
+            company: "Tarso Tech",
+            period: "09/2025 – atual",
+            bullets: [
+                "Testes manuais para validar qualidade, funcionamento e aderência aos requisitos.",
+                "Análise de requisitos e criação de cenários e casos de teste, com foco em regras de negócio e fluxos críticos.",
+                "Identificação, documentação e reporte de bugs com detalhes para apoiar a correção.",
+                "Testes funcionais, regressivos e exploratórios antes da entrega das funcionalidades.",
+                "Prevenção de falhas e melhoria contínua dos processos de qualidade.",
+            ],
+        },
+        {
+            role: "Assistente Administrativo",
+            company: "Universidade Nove de Julho",
+            period: "02/2023 – 09/2025",
+            bullets: [
+                "Suporte às rotinas administrativas e operacionais.",
+                "Atendimento a alunos e colaboradores, com conferência de documentos e informações.",
+                "Lançamento e validação de dados em sistemas internos.",
+            ],
+        },
+        {
+            role: "Auxiliar Administrativo",
+            company: "CIEE",
+            period: "01/2022 – 02/2023",
+            bullets: [
+                "Gerenciamento e conferência de documentos para criação de credenciais de funcionários.",
+                "Controle e liberação de veículos no aeroporto.",
+            ],
+        },
+    ],
+    skills: [
+        { category: "Automação web", items: ["Cypress", "Playwright", "Selenium", "BDD/Cucumber"] },
+        { category: "Python", items: ["pytest", "Hypothesis", "FastAPI", "mypy", "ruff"] },
+        { category: "API", items: ["REST", "Postman", "Swagger", "Status codes", "Payloads", "Contratos"] },
+        { category: "Performance", items: ["K6", "Carga", "Estresse"] },
+        { category: "CI/CD", items: ["GitHub Actions", "Pipelines", "Git", "GitHub"] },
+        { category: "Dados", items: ["SQL", "SQLite", "Consultas", "Validação de dados"] },
+        { category: "Gestão e agilidade", items: ["Jira", "Trello", "Scrum", "Kanban"] },
+        { category: "Análise", items: ["Logs", "Troubleshooting", "Investigação de falhas"] },
+    ],
+    testTypes: ["Funcional", "Regressão", "Integração", "Exploratório", "E2E", "UAT"],
+    techniques: ["Valor-limite", "Partição de equivalência", "Testes baseados em propriedades"],
+    projects: [
+        {
+            id: "silmodas",
+            name: "Silmodas · Fiado",
+            stack: ["Python", "FastAPI", "pytest", "Playwright", "SQLite", "GitHub Actions"],
+            summary: "Sistema em uso real em uma loja de roupas para registrar vendas a prazo e enviar alertas de vencimento no celular, projetado desde o início para ser testável.",
+            bullets: [
+                "228 testes automatizados com pytest (unitários, de serviço, de API e baseados em propriedades com Hypothesis), com 100% de cobertura e CI falhando abaixo de 95%.",
+                "31 testes E2E com Playwright em navegador real, com seletores por data-testid e esperas por estado em vez de sleep.",
+                "Validação do contrato da API REST (FastAPI/Swagger): status 201, 204, 401, 404, 409, 422 e 502.",
+                "Valor-limite e partição de equivalência em datas, valores e telefones, além de entradas hostis (XSS, SQL injection, unicode).",
+                "5 bugs reais encontrados pelos testes e cobertos com testes de regressão, como valor digitado com ponto gravado 100x maior e clique duplo criando registro duplicado.",
+                "Pipeline no GitHub Actions com lint (ruff), mypy --strict, testes em Python 3.11, 3.12 e 3.13 e job de E2E com screenshot e trace nas falhas.",
+            ],
+            url: "https://github.com/Mikaelmendonca/silmodas-fiado",
+        },
+        {
+            id: "bdd",
+            name: "QA BDD E2E Automation",
+            stack: ["Cypress", "BDD/Cucumber", "API", "GitHub Actions"],
+            summary: "Testes automatizados E2E com Cypress e abordagem BDD.",
+            bullets: [
+                "Cenários baseados em requisitos funcionais e regras de negócio.",
+                "Automação de testes de API, validando status codes, payloads e fluxos críticos.",
+                "Integração com GitHub Actions para execução automática em pipelines de CI/CD.",
+                "Evidências geradas automaticamente (vídeos e relatórios) para rastreabilidade e análise de falhas.",
+            ],
+            url: "https://github.com/Mikaelmendonca/qa-bdd-e2e-automation",
+        },
+        {
+            id: "saucedemo",
+            name: "Cypress BDD — SauceDemo E2E Tests",
+            stack: ["Cypress", "BDD/Cucumber", "CI"],
+            summary: "Automação de fluxos críticos de e-commerce no SauceDemo.",
+            bullets: [
+                "Cobertura de login, carrinho e checkout.",
+                "Execução headless e integração com pipeline de CI.",
+                "Testes reutilizáveis seguindo boas práticas de QA.",
+            ],
+            url: "https://github.com/Mikaelmendonca/cypress-bdd-saucedemo",
+        },
+        {
+            id: "chatbot",
+            name: "Chatbot de Portfólio",
+            stack: ["TypeScript", "HTML", "CSS", "Playwright", "pytest"],
+            summary: "Este assistente: um chatbot de perguntas prontas em TypeScript puro, sem servidor e sem IA, que roda inteiro no navegador.",
+            bullets: [
+                "Árvore de diálogo por botões, sem campo de digitação, com fluxo coberto por testes automatizados.",
+                "Testes unitários da lógica de respostas com o runner nativo do Node.",
+                "Suíte E2E com Python e Playwright cobrindo navegação, links, privacidade e responsividade.",
+                "Interface responsiva, com tema claro e escuro.",
+            ],
+            url: "https://github.com/Mikaelmendonca/chatbot-portfolio-typescript",
+        },
+    ],
+    education: [
+        {
+            course: "Tecnologia em Análise e Desenvolvimento de Sistemas",
+            institution: "Universidade Nove de Julho",
+            status: "Concluído em 2025",
+        },
+    ],
+    contact: {
+        email: "mikaelmendonca007@gmail.com",
+        linkedin: "https://linkedin.com/in/mikael-mendonça-65017a1b9/",
+        github: "https://github.com/Mikaelmendonca",
+    },
+};

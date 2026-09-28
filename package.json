@@ -1,0 +1,23 @@
+{
+  "name": "chatbot-portfolio-typescript",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Chatbot de portfólio em TypeScript, sem servidor e sem IA: um menu de perguntas prontas que roda inteiro no navegador, testado com o runner nativo do Node e com Python + Playwright.",
+  "license": "MIT",
+  "author": "Mikael Mendonça <mikaelmendonca007@gmail.com>",
+  "homepage": "https://github.com/Mikaelmendonca/chatbot-portfolio-typescript#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mikaelmendonca/chatbot-portfolio-typescript.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc && node scripts/serve.mjs",
+    "test": "tsx --test src/bot.test.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

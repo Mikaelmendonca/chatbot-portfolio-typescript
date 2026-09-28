@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mikael Mendonça · QA</title>
+  <meta name="description" content="Converse com o assistente virtual do Mikael Mendonça, Analista de Qualidade de Software." />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- TODO após o deploy: troque estas duas URLs pelo endereço real do site publicado. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mikaelmendonca.github.io/chatbot-portfolio-typescript/" />
+  <meta property="og:title" content="Mikael Mendonça · Analista de Qualidade de Software" />
+  <meta property="og:description" content="Converse com o assistente virtual do Mikael Mendonça e conheça sua experiência, projetos e skills em QA." />
+  <meta property="og:image" content="https://mikaelmendonca.github.io/chatbot-portfolio-typescript/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="chat">
+    <header class="top">
+      <div class="avatar" id="avatar" aria-hidden="true"></div>
+      <div class="who">
+        <h1 id="name"></h1>
+        <p><span class="status"></span><span id="role"></span></p>
+      </div>
+      <nav class="links" id="links" aria-label="Links do perfil"></nav>
+    </header>
+    <div id="log" role="log" aria-live="polite" aria-label="Conversa"></div>
+    <div class="dock">
+      <small>Escolha uma pergunta</small>
+      <div id="options"></div>
+    </div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
