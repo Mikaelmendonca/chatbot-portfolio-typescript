@@ -4,7 +4,7 @@
 
 Chatbot de portfólio em **TypeScript puro**: sem servidor, sem IA e sem custo. O visitante navega por um menu de perguntas prontas, sem campo de digitação, e roda inteiro no navegador.
 
-🔗 **Demo:** _adicione aqui o link depois do deploy (GitHub Pages, Netlify ou Vercel)_
+🔗 **Demo:** mikaelmendonca.github.io/chatbot-portfolio-typescript/
 
 ![Tela inicial do chatbot](docs/screenshot.png)
 
